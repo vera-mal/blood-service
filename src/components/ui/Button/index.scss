@@ -1,0 +1,24 @@
+@import '../../../styles/index';
+
+.button-custom {
+  background: $error-600;
+  @include shadow-xs;
+  border-radius: 8px;
+  padding: 12px 20px;
+  color: $white;
+  @include text-md;
+  border: none;
+
+  &:hover {
+    background: $error-700;
+  }
+
+  &:active, &:focus {
+    background: $error-600;
+    @include shadow-xs-focused-4px-error-100;
+  }
+
+  &:disabled {
+    \background: $error-200;
+  }
+}

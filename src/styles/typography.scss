@@ -1,0 +1,17 @@
+$Inter: Inter, sans-serif;
+
+@mixin text-md {
+  font-family: $Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin text-xl-normal {
+  font-family: $Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}

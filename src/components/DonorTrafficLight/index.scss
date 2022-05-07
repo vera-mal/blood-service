@@ -1,0 +1,44 @@
+@import '../../styles/index';
+
+.dtr {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 50px);
+  grid-gap: 28px 30px;
+  width: 850px;
+
+  &__type {
+    grid-column: auto / span 2;
+    background: $gray-50;
+    color: $gray-800;
+  }
+
+  &__rh {
+    background: $gray-500;
+    color: $white;
+  }
+
+  &__cell {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid $gray-300;
+    @include shadow-xs;
+    @include text-xl-normal;
+
+    &--red {
+      background: $error-500;
+    }
+
+    &--yellow {
+      background: $warning-500;
+    }
+
+    &--green {
+      background: $success-500;
+    }
+  }
+}
