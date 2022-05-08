@@ -1,15 +1,13 @@
 import React from 'react';
 import './styles/index.scss';
-import { BrowserRouter } from 'react-router-dom';
-import { Root } from './pages/root';
-import { Header } from './components/Header';
-import './App.scss';
+import { Button } from './components/ui/Button';
+import { Logo } from './assets/Logo';
+import { DonorTrafficLight } from './components/DonorTrafficLight';
 
 export const App = () => (
-  <BrowserRouter>
-    <Header />
-    <div className="layout">
-      <Root />
-    </div>
-  </BrowserRouter>
+  <div>
+    <Logo />
+    <Button text="Button CTA" />
+    <DonorTrafficLight />
+  </div>
 );
