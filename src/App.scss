@@ -1,0 +1,7 @@
+@import './styles/index';
+
+.layout {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: $header-height 0 0;
+}
