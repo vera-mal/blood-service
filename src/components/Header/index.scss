@@ -26,11 +26,17 @@
   }
 
   &__link {
+    cursor: pointer;
     color: $gray-500;
-    @include text-md;
+    @include text-md-medium;
+    text-decoration: none;
 
     &:not(:last-child) {
       margin-right: 32px;
+    }
+
+    &:visited {
+      color: $gray-500;
     }
   }
 

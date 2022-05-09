@@ -6,7 +6,7 @@
   border-radius: 8px;
   padding: 12px 20px;
   color: $white;
-  @include text-md;
+  @include text-md-medium;
   border: none;
 
   &:hover {
