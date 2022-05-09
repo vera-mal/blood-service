@@ -1,11 +1,13 @@
 $Inter: Inter, sans-serif;
 
-@mixin text-md {
+@mixin header-1 {
   font-family: $Inter;
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+
+  letter-spacing: -0.02em;
 }
 
 @mixin text-xl-normal {
@@ -14,4 +16,36 @@ $Inter: Inter, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+}
+
+@mixin text-md {
+  font-family: $Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin text-md-medium {
+  @include text-md;
+  font-weight: 500;
+}
+
+@mixin text-sm-medium {
+  font-family: $Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@mixin text-xs {
+  font-family: $Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@mixin text-xs-medium {
+  @include text-xs;
+  font-weight: 500;
 }
