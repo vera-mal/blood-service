@@ -1,0 +1,72 @@
+@import '../../styles/index';
+
+.map-page {
+  width: 100%;
+  padding-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0 30px;
+
+  &__header {
+    @include header-1;
+    margin: 0 0 48px;
+  }
+
+  &__info {
+    grid-column: 1 / 6;
+  }
+
+  &__map {
+    grid-column: 6 / 13;
+    height: 600px;
+    background-color: $gray-500;
+  }
+
+  &__filter {
+    margin: 0 0 28px;
+    background: $white;
+    border: 1px solid $gray-300;
+    @include shadow-xs;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    color: $gray-700;
+    @include text-sm-medium;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: $gray-700;
+      padding: 0 8px 0 0;
+    }
+  }
+
+  &__institution {
+    padding: 16px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #EAECF0;
+    }
+  }
+
+  &__link {
+    color: $gray-700;
+    text-decoration: none;
+    @include text-md-medium;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #EAECF0;
+    }
+
+    &:visited {
+      color: $gray-700;
+    }
+
+    &:hover {
+      color: $orange-700;
+      text-decoration-line: underline;
+    }
+  }
+}

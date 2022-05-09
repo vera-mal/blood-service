@@ -7,15 +7,27 @@
   grid-gap: 28px 30px;
   width: 850px;
 
+  &--small {
+    grid-template-rows: repeat(2, 22px);
+    grid-gap: 8px 12px;
+    width: 100%;
+  }
+
   &__type {
     grid-column: auto / span 2;
     background: $gray-50;
     color: $gray-800;
+
+    &--small {
+      background: $gray-100;
+      color: $gray-700;
+    }
   }
 
   &__rh {
     background: $gray-500;
     color: $white;
+    border: none!important;
   }
 
   &__cell {
@@ -39,6 +51,30 @@
 
     &--green {
       background: $success-500;
+    }
+
+    &--small {
+      padding: 2px 0;
+      // - shadow-xs
+      mix-blend-mode: multiply;
+      border-radius: 16px;
+      border: none;
+      @include text-xs;
+    }
+
+    &--small#{&}--red {
+      color: $error-700;
+      background: $error-50;
+    }
+
+    &--small#{&}--yellow {
+      color: $warning-700;
+      background: $warning-50;
+    }
+
+    &--small#{&}--green {
+      color: $success-700;
+      background: $success-50;
     }
   }
 }

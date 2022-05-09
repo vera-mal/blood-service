@@ -1,0 +1,28 @@
+@import '../../styles/index';
+
+.institution-tooltip {
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 418px;
+
+  &__header {
+    @include text-md-medium;
+    margin: 0 0 4px 0;
+    color: $gray-700;
+  }
+
+  &__info {
+    color: $gray-500;
+    @include text-md;
+  }
+
+  &__address {
+    margin: 0 0 4px 0;
+  }
+
+  &__time {
+    margin: 0 0 8px 0;
+  }
+}
