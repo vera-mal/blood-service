@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import { list } from '../../mocks/mapPage';
 import { IInstitutionBase } from '../../typings/institutions';
 import { FilterLines } from '../../assets/icons/FilterLines';
-import { MapPin } from '../../components/ui/MapPin';
-import { InstitutionTooltip } from '../../components/InstitutionTooltip';
+import { Map } from '../../components/Map';
 
 export const MapPage: FC = () => (
   <div className="map-page">
@@ -24,8 +23,7 @@ export const MapPage: FC = () => (
       </ul>
     </div>
     <div className="map-page__map">
-      <MapPin />
-      <InstitutionTooltip />
+      <Map />
     </div>
   </div>
 );
