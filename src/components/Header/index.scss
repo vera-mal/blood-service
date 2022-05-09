@@ -26,6 +26,7 @@
   }
 
   &__link {
+    cursor: pointer;
     color: $gray-500;
     @include text-md-medium;
     text-decoration: none;
